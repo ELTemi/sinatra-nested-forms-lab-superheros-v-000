@@ -14,4 +14,9 @@ class App < Sinatra::Base
       erb :team
     end
 
+    configure do
+      enable :sessions
+      set :session_secret, "secret"
+    end
+
 end
